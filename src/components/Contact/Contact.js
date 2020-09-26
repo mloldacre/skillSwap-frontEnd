@@ -6,7 +6,7 @@ export default function Contact() {
   return (
     <section>
       <div className="Contact">
-       
+        <BackButton />
       </div>
     </section>
   );
