@@ -1,0 +1,394 @@
+/* Main Section */
+
+@import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap');
+main {
+  display: flex;
+  flex: 1;
+  text-align: center;
+  flex-direction: column;
+  font-family: 'Architects Daughter', cursive;
+}
+
+Section {
+  flex: 1;
+  text-align: center;
+  flex-direction: column;
+}
+
+h1, h2 {
+  color: rgb(2, 32, 78);
+  font-size: 40px;
+}
+
+h3 {
+  color: rgb(3, 48, 116);
+  font-size: 25px;
+}
+
+fieldset, label {
+  display: inline-flex;
+  text-align: justify;
+}
+
+input {
+  display: grid;
+}
+
+ul {
+  display: flex;
+  text-align: justify;
+  flex-direction: column;
+  align-content: left;
+}
+
+li {
+  list-style-type: none;
+  border: rgb(1, 10, 48) solid 2px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+button {
+  margin-top: 10px;
+  margin-left: 5px;
+  display: inline-block;
+  padding: 10px;
+  border: 0;
+  font-size: 16px;
+  background: rgb(2, 32, 78);
+  color: #fff;
+  font-family: 'Architects Daughter', cursive;
+}
+
+form textarea {
+  display: flexbox;
+  height: 15rem;
+  width: 75%;
+  color: #000;
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+img {
+  max-width: 300px;
+  align-self: center;
+  margin-top: 10px;
+}
+
+a:link {
+  color: rgb(13, 98, 151);
+  text-decoration: none;
+  font-size: xx-large;
+}
+
+a:visited {
+  color: rgb(13, 98, 151);
+  text-decoration: none;
+  font-size: xx-large;
+}
+
+a:hover {
+  color: #6fdff3;
+  text-decoration: none;
+  font-size: xx-large;
+}
+
+a:active {
+  color: #a830b8;
+  text-decoration: none;
+  font-size: xx-large;
+}
+
+.App {
+  flex-direction: column;
+  min-height: 100vh;
+  text-align: center;
+}
+
+.About {
+  display: grid;
+  flex: 1;
+  text-align: center;
+  padding: 10px;
+  justify-content: center;
+  align-items: center;
+}
+
+.About article {
+  max-width: 320px;
+  text-align: start;
+}
+
+.About p {
+  text-indent: 30px;
+}
+
+.BackButton {
+  margin-top: 10px;
+  margin-left: 5px;
+  display: inline-block;
+  padding: 10px;
+  border: 0;
+  font-size: 16px;
+  background: rgb(2, 32, 78);
+  color: #fff;
+  position: relative;
+  bottom: auto;
+}
+
+.BackButton a:link {
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  font-size: 16px;
+}
+
+.BackButton a:visited {
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  font-size: 16px;
+}
+
+.BackButton a:hover {
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  font-size: 16px;
+}
+
+.BackButton a:active {
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  font-size: 16px;
+}
+
+.Contact {
+  display: inline-flex;
+  flex: 1;
+  text-align: center;
+  padding: 10px;
+  flex-direction: column;
+}
+
+.Contact article {
+  flex-direction: column;
+}
+
+.Demo {
+  display: inline-flexbox;
+  flex: 1;
+  text-align: center;
+  padding: 10px;
+}
+
+.Landing {
+  display: flex;
+  flex: 1;
+  text-align: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.Landing h4 {
+  color: rgb(2, 32, 78);
+  max-width: 200px;
+}
+
+.LoginSignup {
+  display: inline-flexbox;
+  flex: 1;
+  text-align: center;
+  padding: 10px;
+}
+
+.NotFound {
+  flex: 1;
+  text-align: center;
+}
+
+.Profile {
+  flex: 1;
+  text-align: center;
+}
+
+.Profile h2 {
+  color: rgb(2, 32, 78);
+}
+
+.Registration {
+  display: inline-flexbox;
+  flex: 1;
+  text-align: center;
+  padding: 10px;
+}
+
+.ScribeInCalendar {
+  display: inline-flexbox;
+  flex: 1;
+  text-align: center;
+}
+
+.ScribeReviewViewScribble p {
+  display: inline-flex;
+  text-align: left;
+  word-break: break-all;
+  flex-direction: row;
+  max-width: 100vw;
+  padding-right: 15px;
+  margin-left: 15px;
+  
+}
+
+.ScribeReviewViewScribblesList button {
+  margin-left: 5px;
+  display: inline-flexbox;
+  align-content: center;
+  padding: 5px;
+  border: 0;
+  font-size: 16px;
+  background: rgb(2, 32, 78);
+  color: #fff;
+}
+
+/* Header */
+
+.Header {
+  display: flex;
+  flex-direction: row;
+  background-color: rgb(32, 115, 240);
+  font-family: 'Architects Daughter', cursive;
+}
+
+.Header nav {
+  display: flex;
+  flex: 1;
+  justify-content: flex-end;
+  text-decoration: none;
+}
+
+.Header span {
+  display: inline-flex;
+  flex: 2;
+  text-decoration: none;
+  padding: 5px;
+  padding-top: 35px;
+}
+
+.Header h1 {
+  font-size: 35px;
+  color: white;
+}
+
+header a:link {
+  color: white;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+header a:visited {
+  color: white;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+/* Footer */
+
+footer {
+  display: flex;
+  flex-direction: row;
+  background-color: rgb(17, 70, 148);
+  margin-top: 20px;
+  color: white;
+  padding: 10px;
+  justify-content: space-between;
+  font-family: 'Architects Daughter', cursive;
+}
+
+footer a:link {
+  color: white;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+footer a:visited {
+  color: white;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+/*Desktops*/
+
+@media all and (min-width: 600px) {
+  ul {
+    display: inline-flex;
+    text-align: justify;
+    flex-direction: column;
+    align-content: left;
+  }
+  li {
+    list-style-type: none;
+    border: rgb(1, 10, 48) solid 2px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+  }
+  form textarea {
+    display: flexbox;
+    height: 15rem;
+    width: 100%;
+    color: #000;
+    font-size: 16px;
+    margin-bottom: 20px;
+  }
+  .Header span {
+    display: inline-flex;
+    flex: 2;
+    text-decoration: none;
+    padding: 10px;
+    padding-top: 50px;
+  }
+  .Header h1 {
+    font-size: 60px;
+    color: white;
+  }
+  header a:link {
+    color: white;
+    text-decoration: none;
+    font-size: xx-large;
+  }
+  header a:visited {
+    color: white;
+    text-decoration: none;
+    font-size: xx-large;
+  }
+  footer {
+    display: flex;
+    flex-direction: row;
+    background-color: rgb(17, 70, 148);
+    margin-top: 20px;
+    padding: 10px;
+    justify-content: space-between;
+  }
+  footer a:link {
+    font-size: xx-large;
+  }
+  footer a:visited {
+    font-size: xx-large;
+  }
+  .ScribeReviewViewScribble p {
+    display: inline-flex;
+    text-align: left;
+    word-break: break-all;
+    flex-direction: row;
+    max-width: 25vw;
+    padding-right: 15px;
+    margin-left: 15px;
+  }
+  .ScribeReviewViewScribblesList button {
+    margin-left: 5px;
+    display: inline-flexbox;
+    align-content: center;
+    padding: 5px;
+    border: 0;
+    font-size: 16px;
+    background: rgb(2, 32, 78);
+    color: #fff;
+  }
+}
