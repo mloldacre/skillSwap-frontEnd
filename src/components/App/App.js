@@ -30,9 +30,12 @@ export default class App extends React.Component {
           <Route path='/contact' component={Contact} />
           <PublicRoute path='/loginRegister' component={Login} />
           <PublicRoute path='/registration' component={Registration} />
-          <PrivateRoute path='/loggedIn' component={ActiveUserView}/>
-          <PrivateRoute path='/profile' component={Profile}/>    
-          <PrivateRoute path='/editProfile' component={EditUserView}/>
+          {/* Private */}
+          <Route path='/loggedIn' component={ActiveUserView}/>
+        
+          <Route path='/profile' component={Profile}/>    
+          <Route path='/editProfile' component={EditUserView}/>
+          {/* private */}
           <Route component={NotFound} />
         </Switch>
         <Footer />

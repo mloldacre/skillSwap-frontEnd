@@ -17,9 +17,9 @@ export default class Profile extends Component {
 
   componentDidMount() {
     this.context.clearError()
-    AuthApiService.getUser()
-      .then(this.context.setUser)
-      .catch(this.context.setError)
+    // AuthApiService.getUser()
+    //   .then(this.context.setUser)
+    //   .catch(this.context.setError)
   }
 
   state = { error: null }
@@ -40,7 +40,6 @@ export default class Profile extends Component {
   render() {
     const { error } = this.context
     const { user } = this.context
-    console.log("User:", user);
     return (
       <div className="Profile">
         <h2>My Profile</h2>

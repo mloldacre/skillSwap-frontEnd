@@ -7,14 +7,15 @@ export default class ActiveUserView extends Component {
     return (
       <main>
       <h1>Main Menu</h1>      
+      <p>Placeholder for list of services near me</p>
       <Link to='/scribesCalendar/'>
-        <p>Calendar</p>
+        <p>Search functionality?</p>
       </Link>
         <Link to='/scribeReview/'>
-          <p>Current Scribe</p>
+          <p>Skill request form</p>
       </Link>
         <Link to='/scribbleEntry/'>
-          <p>Enter Scribbles</p>
+          <p>What I offer form</p>
       </Link>
       </main>
     )

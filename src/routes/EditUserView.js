@@ -21,9 +21,9 @@ export default class Profile extends Component {
 
   componentDidMount() {
     this.context.clearError()
-    AuthApiService.getUser()
-      .then(this.context.setUser)
-      .catch(this.context.setError)
+    // AuthApiService.getUser()
+    //   .then(this.context.setUser)
+    //   .catch(this.context.setError)
   }
 
 
