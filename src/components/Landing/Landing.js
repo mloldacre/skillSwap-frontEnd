@@ -1,17 +1,18 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import '../../Style.css';
-import Logo from '../../images/1515806.png';
+import Logo from '../../images/barter.jpeg';
 
 export default function Landing() {
   return (
     <div className="Landing">
       <Link to='/loginRegister'>
-        <h1>Subscribe to YOUR life!</h1>
+        <h1>Subscribe to Barter!</h1>
       </Link>
-      <h4>LifeScribe is a time-based web journal application that allows you to review your entries based on time and date.</h4>
+      <h4>Barter is a platform to trade skills. Need to learn to change a tire? How about learning to be a better dancer? 
+      </h4>
       <Link to='/demo'>
-        Try a Scribe!
+        Test Barter today!
       </Link>
       <Link to='/demo'><img src={Logo} alt='Logo goes here' /></Link>
     </div>

@@ -39,10 +39,10 @@ export default class Header extends Component {
       <header className="Header">
         {TokenService.hasAuthToken()
           ?<Link to='/loggedIn'>
-            <h1>LifeScribe</h1>
+            <h1>Barter</h1>
           </Link>
           : <Link to='/'>
-            <h1>LifeScribe</h1>
+            <h1>Barter</h1>
           </Link>}
         <nav>
           {TokenService.hasAuthToken()
