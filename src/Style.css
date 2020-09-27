@@ -24,7 +24,8 @@ Section {
 
 h1, h2 {
   color: ##3b5d41;
-  font-size: 40px;
+  font-size: 60px;
+  margin-bottom: 0;
 }
 
 h3 {
@@ -144,6 +145,8 @@ a:active {
   padding: 10px;
   justify-content: center;
   align-items: center;
+  max-width: 80%;
+  margin: auto;
 }
 
 .About article {
@@ -220,9 +223,22 @@ a:active {
   align-items: center;
 }
 
+.LandingSection {
+  flex: 1;
+  margin: 10px;
+  padding-top: 20px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); /* this adds the "card" effect */
+  padding: 16px;
+  text-align: center;
+  background-color: #f1f1f1;
+  width: 80%;
+
+}
+
+
 .Landing h4 {
   color: rgb(2, 32, 78);
-  max-width: 200px;
+  max-width: 80%;
 }
 
 .LoginSignup {
@@ -302,12 +318,13 @@ a:active {
   flex: 2;
   text-decoration: none;
   padding: 5px;
-  padding-top: 35px;
+  padding-top: 30px;
 }
 
 .Header h1 {
   font-size: 35px;
   color: white;
+  margin-bottom: 0;
 }
 
 header a:link {
@@ -425,11 +442,13 @@ footer a:visited {
     flex: 2;
     text-decoration: none;
     padding: 10px;
-    padding-top: 50px;
+    padding-top: 35px;
   }
   .Header h1 {
     font-size: 60px;
     color: white;
+    margin: 0;
+  
   }
   header a:link {
     color: white;

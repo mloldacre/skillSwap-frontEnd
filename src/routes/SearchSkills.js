@@ -38,7 +38,7 @@ export default class ScribeCalendarView extends Component {
           <div className="search">
             <input type="text" className="searchTerm" placeholder="What are you looking for?"/>
               <button type="submit" className="searchButton">
-              <img src={searchIcon} alt="" width="26" height="26"></img>
+              <img src={searchIcon} alt="magnifying glass" width="26" height="26"></img>
               </button>
         </div>
           </div>
