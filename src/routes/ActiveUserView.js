@@ -8,7 +8,7 @@ export default class ActiveUserView extends Component {
     return (
       <main>
       <h1>Welcome back, Swapper</h1>      
-        <Link to='/scribeReview/'>
+        <Link to='/addSkill/'>
           <p>Skill request form</p>
       </Link>
 
