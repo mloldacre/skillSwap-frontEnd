@@ -4,6 +4,10 @@ import SkillContext from '../contexts/SkillContext';
 import { Section } from '../components/Utils/Utils'
 import BackButton from '../components/BackButton/BackButton'
 import '../Style.css'
+import searchIcon from '../images/searchIcon.png'
+import Placeholder from '../images/swap.jpg'
+
+
 
 
 export default class ScribeCalendarView extends Component {
@@ -34,10 +38,48 @@ export default class ScribeCalendarView extends Component {
           <div className="search">
             <input type="text" className="searchTerm" placeholder="What are you looking for?"/>
               <button type="submit" className="searchButton">
-                <i className="fa fa-search"></i>
+              <img src={searchIcon} alt="magnifying glass" width="26" height="26"></img>
               </button>
         </div>
           </div>
+
+          <div className='group'>
+          <p>Trending Categories:</p>
+          <div className='item2'>
+            <p>Home Repair</p>
+          </div>
+          <div className='item2'>
+            <p>French Lessons</p>
+          </div>
+          <div className='item2'>
+            <p>Web Design</p>
+          </div>
+          <div className='item2'>
+            <p>Personal Chef</p>
+          </div>
+          <div className='item2'>
+            <p>Guitar Lessons</p>
+          </div>
+          
+          </div>
+
+          <div className="group">
+				<div className="item">	
+        <img src={Placeholder} alt="Hands swaping various objects like cds, tools, books"></img>	
+          <h3>Item 1</h3>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+				</div>
+				<div className="item">
+        <img src={Placeholder} alt="Hands swaping various objects like cds, tools, books"></img>	
+          <h3>Item 2</h3>
+					<p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. </p>
+				</div>
+        <div className="item">
+        <img src={Placeholder} alt="Hands swaping various objects like cds, tools, books"></img>	
+          <h3>Item 3</h3>
+					<p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+				</div>
+			</div>
           {/* <h2>Previous Scribes</h2>
         {error
           ? <p className='error'>There was an error, try again</p>
