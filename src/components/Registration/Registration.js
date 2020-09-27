@@ -88,6 +88,18 @@ export default class Registration extends Component {
                 id='RegistrationFormEmail'>
               </input>
             </div>
+            <div className='zipcode'>
+              <label htmlFor='zipcode'>
+              Zipcode:
+          </label>
+              <input
+                name='zipcode'
+                type='number'
+                maxLength='5'
+                required
+                id='zipcode'>
+              </input>
+            </div>
             <div className='user_name'>
               <label htmlFor='RegistrationFormUsername'>
                 Username:
