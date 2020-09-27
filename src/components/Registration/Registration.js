@@ -18,7 +18,7 @@ export default class Registration extends Component {
 
   handleSubmit = ev => {
     ev.preventDefault()
-    const { first_name, last_name, email, user_name, zip_code ,password } = ev.target
+    const { first_name, last_name, email, user_name, zipcode ,password } = ev.target
 
     this.setState({ error: null })
     AuthApiService.postUser({
@@ -27,7 +27,7 @@ export default class Registration extends Component {
       email: email.value,
       user_name: user_name.value,
       password: password.value,
-      zip_code: zip_code
+      zip_code: zipcode
     })
       .then(user => {
         first_name.value = ''
