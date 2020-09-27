@@ -1,0 +1,6 @@
+.group > img {
+  display: flex;
+  max-height: 250px;
+  margin: 10px 10px;
+  text-align: center;
+}
