@@ -4,4 +4,3 @@ export default {
 }
 
 
-//https://lit-bastion-34320.herokuapp.com/api
