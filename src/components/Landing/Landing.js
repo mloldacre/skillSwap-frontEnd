@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import '../../Style.css';
-import Logo from '../../images/barter.jpeg';
+import Barter from '../../images/barter.jpeg';
 
 export default function Landing() {
   return (
@@ -14,7 +14,7 @@ export default function Landing() {
       <Link to='/demo'>
         Test Barter today!
       </Link>
-      <Link to='/demo'><img src={Logo} alt='Logo goes here' /></Link>
+      <Link to='/demo'><img src={Barter} alt='Logo goes here' /></Link>
     </div>
   );
 }
