@@ -16,6 +16,19 @@ getSkills(){
 },
 getCurrentSkill(){},
 
+getSkillCloseBy(){
+  return fetch(`${config.API_ENDPOINT}/skills/close`, {
+    headers: {
+      'authorization': `bearer ${TokenService.getAuthToken()}`,
+    },
+  })
+    .then(res =>
+      (!res.ok)
+        ? res.json().then(e => Promise.reject(e))
+        : res.json()
+    )
+},
+
 
   postSkill(userId, skill) {
     return fetch(`${config.API_ENDPOINT}/skills`, {

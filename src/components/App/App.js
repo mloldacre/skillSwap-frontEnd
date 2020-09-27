@@ -13,7 +13,7 @@ import ActiveUserView from '../../routes/ActiveUserView'
 import Login from '../../routes/Login'
 import Registration from '../Registration/Registration'
 import SearchSkills from '../../routes/SearchSkills'
-
+import RangeTest from '../RangeTest';
 import EditUserView from '../../routes/EditUserView'
 import '../../Style.css';
 import AddSkill from '../AddSkills/AddSkill';
@@ -30,6 +30,7 @@ export default class App extends React.Component {
           <Route exact path='/' component={Landing} />
           <Route path='/about' component={About} />
           <Route path='/contact' component={Contact} />
+          <Route path='/close' component={RangeTest} />
           <PublicRoute path='/loginRegister' component={Login} />
           <PublicRoute path='/registration' component={Registration} />
           {/* Private */}
