@@ -1,7 +1,7 @@
-import TokenService from '../services/token-service'
+import TokenService from './token-service'
 import config from '../config'
 
-const ScribeApiService = {
+const SkillApiService = {
   getCurrentScribe() {
     return fetch(`${config.API_ENDPOINT}/scribes/currentScribe`, {
       headers: {
@@ -142,4 +142,4 @@ const ScribeApiService = {
 
 }
 
-export default ScribeApiService
+export default SkillApiService
