@@ -94,7 +94,7 @@ export default class Registration extends Component {
           </label>
               <input
                 name='zipcode'
-                type='number'
+                type='text'
                 maxLength='5'
                 required
                 id='zipcode'>
