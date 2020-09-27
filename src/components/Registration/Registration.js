@@ -27,7 +27,7 @@ export default class Registration extends Component {
       email: email.value,
       user_name: user_name.value,
       password: password.value,
-      zip_code: zipcode
+      zip_code: zipcode.value,
     })
       .then(user => {
         first_name.value = ''
@@ -35,6 +35,7 @@ export default class Registration extends Component {
         email.value = ''
         user_name.value = ''
         password.value = ''
+        zipcode.value = ''
         this.handleRegistrationSuccess()
       })
       .catch(res => {
