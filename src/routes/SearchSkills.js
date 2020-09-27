@@ -43,6 +43,26 @@ export default class ScribeCalendarView extends Component {
         </div>
           </div>
 
+          <div className='group'>
+          <p>Trending Categories:</p>
+          <div className='item2'>
+            <p>Home Repair</p>
+          </div>
+          <div className='item2'>
+            <p>French Lessons</p>
+          </div>
+          <div className='item2'>
+            <p>Web Design</p>
+          </div>
+          <div className='item2'>
+            <p>Personal Chef</p>
+          </div>
+          <div className='item2'>
+            <p>Guitar Lessons</p>
+          </div>
+          
+          </div>
+
           <div className="group">
 				<div className="item">	
         <img src={Placeholder} alt="Hands swaping various objects like cds, tools, books"></img>	

@@ -348,6 +348,7 @@ header a:visited {
   width: 100%;
   position: relative;
   display: flex;
+  margin: 20px 0;
 }
 
 .searchTerm {

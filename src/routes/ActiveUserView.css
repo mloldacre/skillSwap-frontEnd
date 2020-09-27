@@ -35,3 +35,18 @@ h3 {
   text-align: center;
   background-color: #f1f1f1;
 }
+
+.item2 {
+  flex: 1;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); /* this adds the "card" effect */
+  padding: 10px;
+  margin: 0 4px;
+  text-align: center;
+  background-color: #f1f1f1;
+  max-height: 30px;
+  font-size: .7em;
+}
+
+.item2 > p {
+  margin: 0;
+}
