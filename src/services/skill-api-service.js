@@ -2,8 +2,8 @@ import TokenService from './token-service'
 import config from '../config'
 
 const SkillApiService = {
-  getCurrentScribe() {
-    return fetch(`${config.API_ENDPOINT}/scribes/currentScribe`, {
+getSkills(){
+    return fetch(`${config.API_ENDPOINT}/skills`, {
       headers: {
         'authorization': `bearer ${TokenService.getAuthToken()}`,
       },
@@ -13,67 +13,21 @@ const SkillApiService = {
           ? res.json().then(e => Promise.reject(e))
           : res.json()
       )
-  },
+},
+getCurrentSkill(){},
 
-  getScribesByUser() {
-    return fetch(`${config.API_ENDPOINT}/scribes/`, {
-      headers: {
-        'authorization': `bearer ${TokenService.getAuthToken()}`,
-      },
-    })
-      .then(res =>
-        (!res.ok)
-          ? res.json().then(e => Promise.reject(e))
-          : res.json()
-      )
-  },
-  getScribeScribbles() {
-    return fetch(`${config.API_ENDPOINT}/scribes/scribbles/`, {
-      headers: {
-        'authorization': `bearer ${TokenService.getAuthToken()}`,
-      },
-    })
-      .then(res =>
-        (!res.ok)
-          ? res.json().then(e => Promise.reject(e))
-          : res.json()
-      )
-  },
-  
-  getScribbleById(scribbleId) {
-    return fetch(`${config.API_ENDPOINT}/scribbles/${scribbleId}`, {
-      headers: {
-        'authorization': `bearer ${TokenService.getAuthToken()}`,
-      },
-    })
-      .then(res =>
-        (!res.ok)
-          ? res.json().then(e => Promise.reject(e))
-          : res.json()
-      )
-  },
-  
-  getScribblesForScribe(scribeId) {
-    return fetch(`${config.API_ENDPOINT}/scribbles/for_scribe/${scribeId}`, {
-      headers: {
-        'authorization': `bearer ${TokenService.getAuthToken()}`,
-      },
-    })
-      .then(res =>
-        (!res.ok)
-          ? res.json().then(e => Promise.reject(e))
-          : res.json()
-      )
-  },
-  
-  postScribe(userId) {
-    return fetch(`${config.API_ENDPOINT}/scribes`, {
+
+  postSkill(userId, skill) {
+    return fetch(`${config.API_ENDPOINT}/skills`, {
       method: 'POST',
       headers: {
         'content-type': 'application/json',
         'authorization': `bearer ${TokenService.getAuthToken()}`,
       },
       body: JSON.stringify({
+        skill_offered: skill.skill_offered,
+        skill_seeking: skill.skill_seeking,
+        skill_desc: skill.skill_desc,
         user_id: userId
       }),
     })
@@ -84,31 +38,8 @@ const SkillApiService = {
       )
   },
 
-
-  //TODO Modify to get media scribbles too!
-  postScribble(userId, scribeId, text) {
-    return fetch(`${config.API_ENDPOINT}/scribbles`, {
-      method: 'POST',
-      headers: {
-        'content-type': 'application/json',
-        'authorization': `bearer ${TokenService.getAuthToken()}`,
-      },
-      body: JSON.stringify({
-        scribe_id: scribeId,
-        scribble_type: 0,
-        scribble_content: text,
-        user_id: userId
-      }),
-    })
-      .then(res =>
-        (!res.ok)
-          ? res.json().then(e => Promise.reject(e))
-          : res.json()
-      )
-  },
-
-  deleteScribble(scribbleId) {
-    return fetch(`${config.API_ENDPOINT}/scribbles/${scribbleId}`, {
+  deleteSkill(skillId) {
+    return fetch(`${config.API_ENDPOINT}/skills/${skillId}`, {
       method: 'DELETE',
       headers: {
         'content-type': 'application/json',
@@ -123,7 +54,7 @@ const SkillApiService = {
   },
   
   updateScribble(scribbleId, text) {
-    return fetch(`${config.API_ENDPOINT}/scribbles/${scribbleId}`, {
+    return fetch(`${config.API_ENDPOINT}/skills/${scribbleId}`, {
       method: 'PATCH',
       headers: {
         'content-type': 'application/json',
